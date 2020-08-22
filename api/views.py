@@ -58,8 +58,8 @@ def productRegister(request):
     serializer = ProductSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
-    return Response(serializer.data, status=status.HTTP_201_CREATED)
-    # return Response(serializer.data, status=status.HTTP_404_CREATED)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    return Response(serializer.data, status=status.HTTP_404_CREATED)
 
 
 @api_view(['PATCH'])
