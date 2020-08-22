@@ -19,12 +19,8 @@ def apiOverview(request):
         'Available Products List' : '/product-list-available/',
         'Out of Stock Products List' : '/product-list-soldout/',
         'Register Product Quantity Change' : '/product-quantity-change/<str:pk>/<str:quantity>/'
-
     }
     return Response(api_urls)
-
-
-
 
 @api_view(['GET'])
 def productList(request):
@@ -60,7 +56,6 @@ def productRegister(request):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     return Response(serializer.data, status=status.HTTP_400_BAD_REQUEST)
-
 
 @api_view(['PATCH'])
 def productQuantityChange(request, pk, quantity):

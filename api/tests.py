@@ -41,7 +41,6 @@ class ProductDetailsTestCase(APITestCase):
 class ProductQuantityChange(APITestCase):
     def setUp(self):
         Product.objects.create(sku='SomeSKU', name='Some Prod', quantity='3', price='450')
-
     def test_product_quantity_change(self):
         response = self.client.patch(reverse('product-quantity-change',
             kwargs={'pk': 'SomeSKU', 'quantity': -1}))
