@@ -12,14 +12,12 @@ All API methods follow the following format: **http://127.0.0.1:8000/api/{method
 Example endpoint for Single-Product look-up method: **http://127.0.0.1:8000/api/product-details/1**
 
 ### All Endpoints
-```
 - **All Products List**: /product-list/
-- Detailed View: /product-details/<str:pk>/
-- Register Product: /product-register/
-- Available Products List: /product-list-available/
-- Out of Stock Products List: /product-list-soldout/
-- Register Product Quantity Change: /product-quantity-change/<str:pk>/<str:quantity>/
-```
+- **Detailed View**: /product-details/<str:pk>/
+- **Register Product**: /product-register/
+- **Available Products List**: /product-list-available/
+- **Out of Stock Products List**: /product-list-soldout/
+- **Register Product Quantity Change**: /product-quantity-change/<str:pk>/<str:quantity>/
 
 ## Response Codes
 ```
