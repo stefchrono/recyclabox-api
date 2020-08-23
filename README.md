@@ -10,3 +10,15 @@ Methods to retrieve data from the recyclabox API require a **GET** request. Meth
 All API methods follow the following format: **http://127.0.0.1:8000/api/{method_endpoint}**
 
 Example endpoint for Single-Product look-up method: **http://127.0.0.1:8000/api/product-details/1**
+
+```
+Response Codes
+Response Codes
+200: Success
+400: Bad request
+401: Unauthorized
+404: Cannot be found
+405: Method not allowed
+422: Unprocessable Entity 
+50X: Server Error
+```
