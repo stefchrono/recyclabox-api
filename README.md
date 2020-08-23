@@ -11,9 +11,8 @@ All API methods follow the following format: **http://127.0.0.1:8000/api/{method
 
 Example endpoint for Single-Product look-up method: **http://127.0.0.1:8000/api/product-details/1**
 
-## Endpoints
+## Response Codes
 ```
-### Response Codes
 200: Success
 201: Created Successfully
 400: Bad request
