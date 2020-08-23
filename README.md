@@ -13,7 +13,7 @@ Example endpoint for Single-Product look-up method: **http://127.0.0.1:8000/api/
 
 ### All Endpoints
 ```
-- All Products List: /product-list/
+- **All Products List**: /product-list/
 - Detailed View: /product-details/<str:pk>/
 - Register Product: /product-register/
 - Available Products List: /product-list-available/
